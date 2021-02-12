@@ -1,0 +1,80 @@
+.buy-sell {
+    $mobile_tabs_height: 77px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    &__empty {
+        margin-top: calc(#{$mobile_tabs_height} + 2.4rem); // Tabs + Margin
+    }
+
+    &__table {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        &-body {
+            height: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__data-list {
+        flex: 1;
+
+        &__data-list-body {
+            flex: 1;
+        }
+
+        .data-list__body-wrapper {
+            flex: 1;
+        }
+    }
+
+    &__table-header {
+        display: grid;
+        grid-template-columns: 2fr repeat(3, 1fr);
+
+        > .dc-table__head:first-child {
+            margin-left: 1.6rem;
+        }
+    }
+
+    &__table-row {
+        padding: 1.6rem;
+        grid-template-columns: 2fr repeat(3, 1fr);
+
+        &:hover {
+            background-color: var(--general-hover);
+        }
+    }
+
+    &__cell {
+        align-items: center;
+        display: flex;
+
+        &-hover {
+            cursor: pointer;
+        }
+    }
+
+    &__name {
+        margin-left: 0.8rem;
+
+        &--allow-hover {
+            &:hover {
+                color: var(--brand-red-coral);
+                text-decoration: underline;
+                text-decoration-color: var(--brand-red-coral);
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
