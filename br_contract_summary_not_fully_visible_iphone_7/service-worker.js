@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/br_contract_summary_not_fully_visible_iphone_7/precache-manifest.424206ed09befe9e263e7a832ce889a4.js"
+  "/br_contract_summary_not_fully_visible_iphone_7/precache-manifest.4836cda36da8bc628c4dd7257b3c2b71.js"
 );
 
 workbox.core.skipWaiting();
